@@ -1,0 +1,38 @@
+# Site settings
+title: apeyrard.github.io
+description: "TODO: insert description here"  # used in site head
+
+# register on google analytics and replace this token
+google_analytics: UA-62429224-2
+# disque comments are broken if you send http:// along with url, this url is same as the one given on disqus
+# Deleting the value would remove it from footer.
+disqus_url: apeyrard.com
+disqus_id: apeyrard
+
+# footer details. Deleting the value would remove it from footer.
+github_username:  apeyrard
+email: alex@apeyrard.com
+stackoverflow_username: 3651767/bork
+copyright_name: Alex Peyrard
+rss : true
+
+# used for portfolio on home page
+collections:
+  - portfolio
+
+# used to estimate reading time
+wpm: 150
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+port: 8888
+permalink: /blog/:title
+
+# jekyll-paginate. for paginating blog posts.
+paginate: 5
+paginate_path: blog/page:num
+
+# gem dependencies
+gems: [jekyll-paginate, jekyll-feed, jekyll-gist]
